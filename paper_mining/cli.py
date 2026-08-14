@@ -18,7 +18,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--images", default=None, help="Path to MinerU images directory. Defaults to paper-dir/images.")
     parser.add_argument("--output-dir", default=None, help="Output directory. Defaults to paper-dir/outputs.")
     parser.add_argument("--cache-dir", default=None, help="Local JSON cache directory. Defaults to output-dir/cache.")
-    parser.add_argument("--api-key", default="sk-84f2f88bc1444a37a4b923be54757d20", help="API key. Prefer env DASHSCOPE_API_KEY or QWEN_API_KEY.")
+    parser.add_argument("--api-key", default="", help="API key. Prefer env DASHSCOPE_API_KEY or QWEN_API_KEY.")
     parser.add_argument("--base-url", default="https://dashscope.aliyuncs.com/compatible-mode/v1")
     parser.add_argument("--model", default="qwen-vl-max")
     parser.add_argument("--max-chars-per-chunk", type=int, default=9000)
